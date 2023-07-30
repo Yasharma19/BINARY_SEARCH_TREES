@@ -30,3 +30,28 @@ class Tree {
         }   
     }   
 }
+
+
+-----------------------------------------------------------------------------------------------
+
+
+// Size and Sum is Same as Binary Tree.
+int Sum(Node root){
+    if(root==null){
+        return 0;
+    }
+    
+    int l=Sum(root.left);
+    int r=Sum(root.right);
+    return l+r+root.data;
+}
+
+int Size(Node root){
+    if(root==null){
+        return 0;
+    }
+    
+    int l=Size(root.left);
+    int r=Size(root.right);
+    return l+r+1;
+}
