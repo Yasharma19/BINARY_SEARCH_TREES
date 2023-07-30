@@ -1,7 +1,7 @@
 
 class Tree {
-    //For minimum,go till the left.
-    //for maximum, we get it on the rightmost of BST.
+    //For minimum,go till the left. There is no need to go right part as it is of no use for finding min element.
+    //for maximum, we get it on the rightmost of BST. There is no need to go left part as it is of no use for finding max element.
     
     //complexity will be O(Height).
     
